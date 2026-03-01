@@ -6,11 +6,20 @@
     <title>Document</title>
     <script>
         var counter = 0;
-        function onClick(){
+        var starrtNumber = 0;
+        function onClickAdd(){
             debugger;
-            var StartNumber = document.getElementById("txtStartNumber").value;
-            alert(StartNumber);
+            if(counter == 0){
+                starrtNumber = parseInt(document.getElementById("txtStartNumber").value);
+            }   
+            counter = counter + 1;
+            starrtNumber = starrtNumber + 1;
+            document.getElementById("result").innerHTML = starrtNumber;
         }
+        function onChangeAdd(){
+            debugger;
+            counter = 0;
+            }
 
     </script>
 </head>
@@ -28,6 +37,6 @@
     </ul>
     <label>Enter a value:</label>
     <input type="number" id="txtStartNumber" placeholder="Enter a number">
-    <button id="btnAdd()">Add</button>
+    <button id="btnAdd()" onclick="onClickAdd()">Add</button>
     <p id="result"></p>
 </html>
