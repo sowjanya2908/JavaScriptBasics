@@ -4,8 +4,11 @@
         <title>Arithmetic Operations</title>
         <script>
             function onclickAdd() {
-              var value1 = document.getElementById("txtValue1").value;
-               var value2 = document.getElementById("txtValue2").value;
+                debugger;
+              var value1 = parseInt(document.getElementById("txtValue1").value);
+               var value2 = parseInt(document.getElementById("txtValue2").value);
+               var result = value1 + value2;
+               document.getElementById("Presult").innerText = "Result: " + result;
 
             }
         </script>
