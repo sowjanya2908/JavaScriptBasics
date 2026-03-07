@@ -2,6 +2,26 @@
 <html>
 <head>
     <title>Profit and Loss Calculator</title>
+    <script>
+        function calculateProfitLoss() {
+            debugger;
+            var costPrice = parseFloat(document.getElementById("costPrice").value);
+            var sellingPrice = parseFloat(document.getElementById("sellingPrice").value);
+            var result = "";
+        
+            if(sellingPrice - costPrice>0){
+                document.getElementById("result").innerHTML = "Profit";
+            }
+            if(sellingPrice - costPrice<0){
+                document.getElementById("result").innerHTML = "Loss";
+            }
+            if(sellingPrice - costPrice ==0){
+                document.getElementById("result").innerHTML = "No Profit No Loss";
+
+            }
+                
+            }
+    </script>
     <body>
         <h1>Profit and Loss Calculator</h1>
         <label>Cost Price:</label>
