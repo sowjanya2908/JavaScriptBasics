@@ -19,5 +19,5 @@ function calculateBill() {
         amount = 100 * 1.5 + 100 * 2.0 + 300 * 3.0 + 500 * 4.0 + (units - 1000) * 5.0;
     }
 
-    document.getElementById('result').innerText = `Total Amount: $${amount.toFixed(2)}`;
+    document.getElementById('result').innerText = `Total Amount: ₹ {amount.toFixed(2)}`;
 }
