@@ -4,3 +4,14 @@ body{
     text-align: center;
     margin-top: 80px;
 }
+
+h1{
+    color: #333;
+}
+
+label{
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+    margin-top: 10px;
+}
