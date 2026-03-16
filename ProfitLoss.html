@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profit and Loss Calculator</title>
-    <script src="JavaScript/ProfitLoss.js"></script>
-    
-    <body>
-        <h1>Profit and Loss Calculator</h1>
-        <label>Cost Price:</label>
-        <input type="number" id="costPrice">
-        <br>
-        <label>Selling Price:</label>
-        <input type="number" id="sellingPrice" >
-        <br>
-        <button onclick="calculateProfitLoss()">Calculate</button>
-        <p id="result"></p>
-    </body>
+    <link rel="stylesheet" href="ProfitLoss.css">
 </head>
+<body>
+    <h1>Profit and Loss Calculator</h1>
+
+    <label for="costPrice">Cost Price:</label>
+    <input type="number" id="costPrice">
+    <br>
+
+    <label for="sellingPrice">Selling Price:</label>
+    <input type="number" id="sellingPrice">
+    <br>
+
+    <button onclick="calculateProfitLoss()">Calculate</button>
+    <p id="result"></p>
+
+    <script src="JavaScript/ProfitLoss.js"></script>
+</body>
 </html>
