@@ -1,4 +1,4 @@
-function onClickFindMin() {
+function onClickFindMax() {
     debugger;
     var digits = document.getElementById("txtDigits").value;
     var value1 = Math.pow(10, digits)*Math.random();
@@ -6,6 +6,6 @@ function onClickFindMin() {
     var value3 = Math.pow(10, digits)*Math.random();
     var value4 = Math.pow(10, digits)*Math.random();
     var value5 = Math.pow(10, digits)* Math.random();
-    var minValue = Math.min(value1, value2, value3, value4, value5);
-    document.getElementById("result").innerHTML = Math.trunc(minValue);
+    var maxValue = Math.max(value1, value2, value3, value4, value5);
+    document.getElementById("result").innerHTML = Math.trunc(maxValue);
 }
