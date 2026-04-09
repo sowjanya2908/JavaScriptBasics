@@ -4,7 +4,6 @@ document.getElementById("buttonAdd").addEventListener("click", function () {
         var value2 = parseInt(document.getElementById("txtValue2").value);
         result = value1 + value2;
         document.getElementById("pResult").innerHTML = result
-
 });
 document.getElementById("buttonSub").addEventListener("click", function () {
         debugger;
